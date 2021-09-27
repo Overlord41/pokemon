@@ -4,15 +4,13 @@ const { DataTypes } = require('sequelize');
 module.exports = (sequelize) => {
   // defino el modelo
   sequelize.define('pokemon', {
-    id: {
-      type: DataTypes.INTEGER,
-      primaryKey: true,
-      autoIncrement: true
-    },
     num_order: {
       type: DataTypes.INTEGER,
+      unique: true,
       allowNull: false,
-      unique: true
+      validate: {
+        min: 41
+      }
     },
     name: {
       type: DataTypes.STRING,
@@ -22,12 +20,18 @@ module.exports = (sequelize) => {
     image: {
       type: DataTypes.STRING,
       allowNull: false,
-      unique: true
+      unique: true,
+      // validate: {
+      //   isUrl: true
+      // }
     },
     imgif: {
       type: DataTypes.STRING,
       allowNull: false,
-      unique: true
+      unique: true,
+      // validate: {
+      //   isUrl: true
+      // }
     },
     hp: {
       type: DataTypes.INTEGER,
@@ -52,6 +56,6 @@ module.exports = (sequelize) => {
     weight: {
       type: DataTypes.INTEGER,
       defaultValue: 0
-    },
+    }
   },{timestamps: false});
 };

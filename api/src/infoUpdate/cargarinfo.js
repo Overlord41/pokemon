@@ -3,12 +3,14 @@ const axios = require('axios');
 var arreglo1 = [];
 var arregloPoke = [];
 async function cargarPokemon(){
-    await axios.get('https://pokeapi.co/api/v2/pokemon?offset=0&limit=15')
+    await axios.get('https://pokeapi.co/api/v2/pokemon?offset=0&limit=40')
     .then(function(res){
         arreglo1.push(res.data.results);
     })
-    arreglo1[0].map(e => {
-        agregarPokemon(e.url);
+    .then(()=>{
+        arreglo1[0].map(e => {
+            agregarPokemon(e.url);
+        })
     })
 }
 
@@ -25,16 +27,15 @@ async function agregarPokemon(URL){
             defense:res.data.stats[2].base_stat,
             speed:res.data.stats[5].base_stat,
             height: res.data.height,
-            weight:res.data.wheight
+            weight:res.data.weight,
+            tipos: res.data.types.map(el => {
+                return { name: el.type.name }
+            })
         })
     })
-    .catch(e => console.log(e));
 }
 
-
-cargarPokemon();
-
-
 module.exports = {
+    cargarPokemon,
     arregloPoke
 }
