@@ -1,6 +1,7 @@
 import React from 'react'
 import ButtonForm from './ButtonForm';
 import './InicioPoke.css';
+import pokelife from '../img/pokelife.png';
 
 const InicioPoke = () => {
     return (
@@ -8,13 +9,13 @@ const InicioPoke = () => {
         <div className="Contain_init">
         <audio src="micancion.mp3" controls="controls"></audio>
             <div>
-                <img src="https://fontmeme.com/temporary/3299dd487f596d822aedc5504ab31715.png"/>
+                <img src={pokelife}/>
             </div>
             <div>
                 <ButtonForm props="Ingresar" link="/pokemons"/>
             </div>
         </div>
-            
+
         </>
     )
 }

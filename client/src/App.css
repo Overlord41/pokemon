@@ -21,13 +21,13 @@
   height: 100vh;
 }
 
-.Img_Principal{
+/* .Img_Principal{
   background: url('../src/img/mewtwo.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 0px;
     height: 100vh;
-}
+} */
 
 .App-header {
   background-color: #282c34;
