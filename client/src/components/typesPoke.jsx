@@ -1,14 +1,11 @@
-import React, { Component } from "react";
-import './navbar.css';
+import React from 'react'
 
-class TypePoke extends Component{
-    render(){
-        return (
-            <div>
-                <imd src={this.props.img} />
-            </div>
-        )
-    }
+const typesPoke = () => {
+    return (
+        <div>
+            <p>Ver tipos Pokémon</p>
+        </div>
+    )
 }
 
-export default TypePoke;
+export default typesPoke

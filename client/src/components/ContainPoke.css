@@ -1,0 +1,19 @@
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    align-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 80%;
+    align-items: center;
+}
+
+.flex-container div{
+    text-align: center;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+

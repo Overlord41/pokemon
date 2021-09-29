@@ -1,23 +1,27 @@
 import './App.css';
-import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
-
-
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import InicioPoke from './components/InicioPoke';
+import AgregarPoke from './components/AgregarPoke';
+import TypesPoke from './components/TypesPoke';
+import ContainPoke from './components/ContainPoke';
 
 function App() {
   return (
     <BrowserRouter>
       <Switch>
         <Route path="/pokemons">
-          Lista de pokémons
+          <div className="Img_fondo">
+            <ContainPoke/>
+          </div>
         </Route>
         <Route path="/agregar">
-          Agregar pokémon
+          <AgregarPoke/>
         </Route>
         <Route path="/types">
-          Lista de tipos
+          <TypesPoke/>
         </Route>
         <Route path="/" exact>
-          Pagina de Inicio
+            <InicioPoke />
         </Route>
       </Switch>
     </BrowserRouter>

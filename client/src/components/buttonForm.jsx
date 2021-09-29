@@ -1,12 +1,15 @@
-import React, { Component } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
+import './ButtonForm.css';
 
-
-class Buttonform extends Component{
-    render(){
+const Buttonform = (props) => {
         return (
-            <button>Saber Mas</button>
+            <Link to={props.link}>
+                <a className="Button_form">
+                    {props.props}
+                </a>
+            </Link>
         )
-    }
 }
 
 export default Buttonform;

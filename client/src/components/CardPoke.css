@@ -1,0 +1,141 @@
+.CardPoke {
+    font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
+    background-color: grey;
+    display: block;
+    width: 180px;
+    height: 300px;
+    padding-bottom: 10px;
+    margin: 10px;
+    align-content: center;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.Contenedor-Poke{
+    background-color: #282828;;
+}
+
+
+.classType {
+    display: inline;
+}
+
+
+.bug {
+    background: url('../img/icoType/bug.png');
+}
+
+.dark {
+    background: url('../img/icoType/dark.png');
+}
+
+.contain_tipos{
+    display: flex;
+    justify-content: center;
+}
+
+.tamanioType{
+    /* background-color: red; */
+    background-repeat: no-repeat;
+    border-radius: 0px;
+    display: block;
+    margin: 5px;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+}
+
+.bug{
+    background: url('../img/icoType/bug.png');
+    background-size: 100%;
+}
+
+.dark{
+    background: url('../img/icoType/dark.png');
+    background-size: 100%;
+}
+
+.dragon{
+    background: url('../img/icoType/dragon.png');
+    background-size: 100%;
+}
+
+.fairy{
+    background: url('../img/icoType/fairy.png');
+    background-size: 100%;
+}
+
+.fighting{
+    background: url('../img/icoType/fighting.png');
+    background-size: 100%;
+}
+
+.fire{
+    background: url('../img/icoType/fire.png');
+    background-size: 100%;
+}
+
+.flying{
+    background: url('../img/icoType/flying.png');
+    background-size: 100%;
+}
+
+.grass{
+    background: url('../img/icoType/grass.png');
+    background-size: 100%;
+}
+
+.ground{
+    background: url('../img/icoType/ground.png');
+    background-size: 100%;
+}
+
+.ice{
+    background: url('../img/icoType/ice.png');
+    background-size: 100%;
+}
+
+.electric{
+    background: url('../img/icoType/electric.png');
+    background-size: 100%;
+}
+
+.normal{
+    background: url('../img/icoType/normal.png');
+    background-size: 100%;
+}
+
+.poison{
+    background: url('../img/icoType/poison.png');
+    background-size: 100%;
+}
+
+.psychic{
+    background: url('../img/icoType/psychic.png');
+    background-size: 100%;
+}
+
+.rock{
+    background: url('../img/icoType/rock.png');
+    background-size: 100%;
+}
+
+.shadow{
+    background: url('../img/icoType/shadow.png');
+    background-size: 100%;
+}
+
+.steel{
+    background: url('../img/icoType/steel.png');
+    background-size: 100%;
+}
+
+.water{
+    background: url('../img/icoType/water.png');
+    background-size: 100%;
+}
