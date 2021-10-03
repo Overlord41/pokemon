@@ -15,9 +15,8 @@ router.get('/',async(req, res) => {
     res.send("Bienvenidos al Mundo Pokémon")
 });
 
-
 router.get('/pokemons', async(req, res) => {
-    const { name } = req.query;
+    const { name, order } = req.query;
     //Si existe la query name
     if(name){
         if(!isNaN(name)){
@@ -50,6 +49,8 @@ router.get('/pokemons', async(req, res) => {
             }
         }
     }
+    //Si existe la query ORDER
+
     //Si no ingresa la query name
     const listaPoke = await Pokemon.findAll(
         {
@@ -66,6 +67,27 @@ router.get('/pokemons', async(req, res) => {
     ListP.sort(function(a, b){
         return a.num_order - b.num_order;
     });
+
+    // Ordenamiento por query (order)
+    if(order){
+        if(order==='ASC'){
+            ListP.sort(function(a, b){
+                return a.num_order - b.num_order;
+            });
+        }else if(order==='DES'){
+            ListP.sort(function(a, b){
+                return b.num_order - a.num_order;
+            });
+        }else if(order==='A-Z'){
+            ListP.sort((a, b) => {
+                return a.name < b.name ? -1 : 1;
+            });
+        }else if(order==='Z-A'){
+            ListP.sort((a, b) => {
+                return a.name > b.name ? -1 : 1;
+            });
+        }
+    }
     res.json(ListP);
     }
 )

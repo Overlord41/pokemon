@@ -4,15 +4,20 @@ import InicioPoke from './components/InicioPoke';
 import AgregarPoke from './components/AgregarPoke';
 import TypesPoke from './components/TypesPoke';
 import ContainPoke from './components/ContainPoke';
+import DetallesPokemon from './components/DetallesPokemon';
 
 function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/pokemons">
-          <div className="Img_fondo">
+      {/* <Route path="/pokemons:id">
             <ContainPoke/>
-          </div>
+        </Route> */}
+        <Route path="/pokemons/:order" exact>
+            <ContainPoke/>
+        </Route>
+        <Route path="/detalles/:name">
+          <DetallesPokemon/>
         </Route>
         <Route path="/agregar">
           <AgregarPoke/>

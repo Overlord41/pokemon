@@ -1,0 +1,35 @@
+tbody{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.bar {
+    height: 6px;
+    width: 150px;
+    position: relative;
+    background: #eaeaea;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+}
+
+.inner {
+    position: absolute;
+    height: 100%;
+    background: rgb(163, 191, 250);
+    border-radius: 5px;
+}
+tr{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+td {
+    font: oblique bold 100% cursive;
+    display: table-cell;
+    vertical-align: inherit;
+    padding: 5px 5px;
+}

@@ -1,0 +1,53 @@
+.CardPoke {
+    font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
+    background-color: grey;
+    display: block;
+    width: 180px;
+    height: 300px;
+    padding-bottom: 10px;
+    margin: 10px;
+    align-content: center;
+}
+
+.Contenedor-Poke img{
+    width: 100px;
+    height: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.Contenedor-Poke img:hover{
+    width: 120px;
+    height: 120px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.Contenedor-Poke{
+    background-color: #282828;;
+}
+
+.classType {
+    display: inline;
+}
+
+.contain_tipos{
+    display: flex;
+    justify-content: center;
+}
+
+.tamanioType{
+    background-repeat: no-repeat;
+    border-radius: 0px;
+    display: block;
+    margin: 5px;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+}
+
+.tamanioType:hover{
+    height: 30px;
+    width: 30px;
+    margin-bottom: 0px;
+}

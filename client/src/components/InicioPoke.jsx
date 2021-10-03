@@ -7,12 +7,11 @@ const InicioPoke = () => {
     return (
         <>
         <div className="Contain_init">
-        <audio src="micancion.mp3" controls="controls"></audio>
             <div>
                 <img src={pokelife}/>
             </div>
             <div>
-                <ButtonForm props="Ingresar" link="/pokemons"/>
+                <ButtonForm props="Ingresar" link="/pokemons/ASC"/>
             </div>
         </div>
 

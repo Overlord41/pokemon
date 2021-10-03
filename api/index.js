@@ -1,7 +1,7 @@
 const server = require('./src/app.js');
 const { conn } = require('./src/db.js');
-const { cargarTipos } = require('./src/infoUpdate/cargarTipos');
-const { cargarPokemon } =require('./src/infoUpdate/cargarinfo');
+const { cargarTipos } = require('./src/infoUpdate/cargarTipos.js');
+const { cargarPokemon } =require('./src/infoUpdate/cargarinfo.js');
 
 // Syncing all the models at once.
 conn.sync({ force: true }).then(() => {

@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
+import './Paginacion.css';
 
-const Paginacion = ({ cantPokPage, totalCards, paginate }) => {
+const Paginacion = ({ cantPokPage, totalCards, paginate, order }) => {
     const NumPaginas = [];
 
     for(let i = 1;i <= Math.ceil(totalCards / cantPokPage); i++){
@@ -13,7 +14,7 @@ const Paginacion = ({ cantPokPage, totalCards, paginate }) => {
                 {
                     NumPaginas.map(numero =>(
                         <li key={numero}>
-                            <a onClick={() => paginate(numero)} href='/pokemons/!#'>
+                            <a onClick={() => paginate(numero)} href={`/pokemons/${order}/#`}>
                                 {numero}
                             </a>
                         </li>

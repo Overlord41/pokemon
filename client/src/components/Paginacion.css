@@ -1,0 +1,30 @@
+
+nav{
+    padding: 10px;
+}
+
+nav>ul>li{
+    list-style: none;
+}
+
+nav>ul{
+    display: flex;
+    justify-content: center;
+}
+
+nav>ul>li>a{
+    font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
+    text-decoration: none;
+    color: #000;
+    margin: 5px;
+    padding: 10px 12px;
+    border: 2px solid #282828;
+    border-radius: 2px;
+    background-color: #e3e4e5;
+}
+
+nav>ul>li>a:hover{
+    background-color: #282828;
+    color: #ffff;
+    padding: 12px 14px;
+}

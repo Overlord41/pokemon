@@ -1,34 +1,50 @@
-.CardPoke {
-    font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
-    background-color: grey;
-    display: block;
-    width: 180px;
-    height: 300px;
-    padding-bottom: 10px;
-    margin: 10px;
-    align-content: center;
+.FoundPoke{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
 }
 
-.CardPoke p{
+
+.statsNormales p{
+    display: inline;
+    padding: 7px;
+    background-color: rgb(78, 78, 78);
+    opacity: .8;
+}
+
+
+.CardPokeInfo {
+    text-align: center;
+    font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
+    background-color: grey;
+    width: 400px;
+    padding-bottom: 30px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.CardPokeInfo p{
     font: oblique bold 100% cursive;
 }
 
-.Contenedor-Poke img{
-    width: 100px;
-    height: 100px;
+.Contenedor-Pokemon img{
+    width: 300px;
+    height: 300px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-.Contenedor-Poke img:hover{
-    width: 120px;
-    height: 120px;
+.Contenedor-Pokemon img:hover{
+    width: 320px;
+    height: 320px;
     padding-top: 0px;
     padding-bottom: 0px;
 }
 
-.Contenedor-Poke{
-    background-color: #282828;;
+.Contenedor-Pokemon{
+    background-color: #282828;
+    width: 100%;
 }
 
 

@@ -16,4 +16,26 @@
     border-radius: 5px;
 }
 
+.contain-Pokemons{
+    background-image: url('../img/581224.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.Img_fondo{
+    padding-top: 1px;
+    background: rgb(95,96,96);
+background: linear-gradient(0deg, rgba(95,96,96,0.647886812017205) 2%, rgba(0,0,0,0.8192351266239466) 61%);
+    /* background: url('../img/peakpx.jpg'); */
+      border-radius: 20px;
+      background-repeat: no-repeat;
+      width: 90%;
+      height: auto;
+      margin-top: 50px;
+      padding-bottom: 20px;
+  }
